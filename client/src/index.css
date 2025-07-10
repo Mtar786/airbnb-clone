@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(0, 0%, 28%);
+  --muted: hsl(0, 0%, 97%);
+  --muted-foreground: hsl(0, 0%, 45%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(0, 0%, 28%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(0, 0%, 28%);
+  --border: hsl(0, 0%, 90%);
+  --input: hsl(0, 0%, 90%);
+  --primary: hsl(0, 77%, 67%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 97%);
+  --secondary-foreground: hsl(0, 0%, 15%);
+  --accent: hsl(0, 0%, 97%);
+  --accent-foreground: hsl(0, 0%, 15%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(0, 0%, 28%);
+  --radius: 0.5rem;
+  
+  /* Airbnb specific colors */
+  --airbnb-red: hsl(0, 77%, 67%);
+  --airbnb-dark: hsl(0, 0%, 28%);
+  --airbnb-light: hsl(0, 0%, 97%);
+  --airbnb-gray: hsl(0, 0%, 45%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 4%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 4%, 16%);
+  --muted-foreground: hsl(240, 5%, 65%);
+  --popover: hsl(240, 10%, 4%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 4%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 4%, 16%);
+  --input: hsl(240, 4%, 16%);
+  --primary: hsl(0, 77%, 67%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(240, 4%, 16%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 4%, 16%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 5%, 84%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-airbnb-red {
+    color: var(--airbnb-red);
+  }
+  
+  .text-airbnb-dark {
+    color: var(--airbnb-dark);
+  }
+  
+  .text-airbnb-light {
+    color: var(--airbnb-light);
+  }
+  
+  .text-airbnb-gray {
+    color: var(--airbnb-gray);
+  }
+  
+  .bg-airbnb-red {
+    background-color: var(--airbnb-red);
+  }
+  
+  .bg-airbnb-dark {
+    background-color: var(--airbnb-dark);
+  }
+  
+  .bg-airbnb-light {
+    background-color: var(--airbnb-light);
+  }
+  
+  .bg-airbnb-gray {
+    background-color: var(--airbnb-gray);
+  }
+  
+  .border-airbnb-red {
+    border-color: var(--airbnb-red);
+  }
+  
+  .border-airbnb-dark {
+    border-color: var(--airbnb-dark);
+  }
+  
+  .hover\:bg-airbnb-red:hover {
+    background-color: var(--airbnb-red);
+  }
+  
+  .hover\:text-airbnb-red:hover {
+    color: var(--airbnb-red);
+  }
+  
+  .hover\:border-airbnb-dark:hover {
+    border-color: var(--airbnb-dark);
+  }
+  
+  .hover\:bg-airbnb-light:hover {
+    background-color: var(--airbnb-light);
+  }
+}
