@@ -224,7 +224,7 @@ export class MemStorage implements IStorage {
 
   async createProperty(insertProperty: InsertProperty): Promise<Property> {
     const id = this.currentPropertyId++;
-    const property: Property = { ...insertProperty, id, createdAt: new Date() };
+    const property: Property = { ...insertProperty, id, createdAt: new Date(), isAvailable: insertProperty.isAvailable ?? true };
     this.properties.set(id, property);
     return property;
   }
