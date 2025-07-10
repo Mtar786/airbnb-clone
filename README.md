@@ -137,7 +137,8 @@ This project is for educational purposes and portfolio demonstration.
 
 ## Screenshots
 
-[Add screenshots of your application here]
+<img width="1290" height="1096" alt="image" src="https://github.com/user-attachments/assets/d2b57eb2-fbd1-4683-a346-2869e3772af8" />
+
 
 ---
 
