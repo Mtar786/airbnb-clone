@@ -1,6 +1,5 @@
 # Airbnb Clone
 
-
 A modern Airbnb homepage clone built with React, TypeScript, and Express.js. This project recreates the core features of Airbnb's homepage with a clean, responsive design.
 
 ## Features
