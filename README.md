@@ -142,4 +142,3 @@ This project is for educational purposes and portfolio demonstration.
 
 ---
 
-Built with ❤️ by Mtar786
